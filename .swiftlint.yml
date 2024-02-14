@@ -1,0 +1,13 @@
+excluded:
+  - "R.generated.swift"
+
+force_cast: warning
+force_try: warning
+
+type_name:
+  unallowed_symbols_severity: warning
+  validates_start_with_lowercase: warning
+
+identifier_name:
+  min_length:
+    warning: 1

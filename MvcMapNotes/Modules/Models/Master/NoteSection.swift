@@ -1,0 +1,3 @@
+enum NoteSection {
+    case main
+}
