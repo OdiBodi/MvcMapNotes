@@ -54,11 +54,7 @@ extension DetailView {
             if let note = note {
                 let selectedAnnotation = self?.selectedAnnotation(by: note)
 
-                guard selectedAnnotation == nil else {
-                    return
-                }
-
-                guard let annotation = self?.annotation(by: note) else {
+                guard selectedAnnotation == nil, let annotation = self?.annotation(by: note) else {
                     return
                 }
 

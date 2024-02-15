@@ -41,7 +41,7 @@ extension DetailViewController {
     }
 
     func addNote(coordinate: CLLocationCoordinate2D) {
-        guard let model = model else {
+        guard let model else {
             return
         }
         let noteModel = NoteModel(coordinate: coordinate.point(), color: .random(), text: "")

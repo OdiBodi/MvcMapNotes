@@ -2,7 +2,7 @@ import UIKit
 
 class NotePresentationController: UIPresentationController {
     override var frameOfPresentedViewInContainerView: CGRect {
-        guard let containerView = containerView else {
+        guard let containerView else {
             return .zero
         }
         let bounds = containerView.bounds

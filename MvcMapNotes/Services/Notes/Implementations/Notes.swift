@@ -3,9 +3,13 @@ import Combine
 import UIKit
 
 class Notes {
-    static let shared = Notes()
-
     @Published var notes: [NoteModel] = []
+}
+
+// MARK: - Static
+
+extension Notes {
+    static let shared = Notes()
 }
 
 // MARK: - Synchronization
