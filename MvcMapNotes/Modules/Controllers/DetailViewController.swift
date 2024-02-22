@@ -7,29 +7,12 @@ class DetailViewController: BaseCoordinatorModule<DetailModuleCompletion, Never>
     private var model: DetailModel?
 }
 
-// MARK: - Life cycle
-
-extension DetailViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        configureView()
-    }
-}
-
 // MARK: - Initializators
 
 extension DetailViewController {
     func initialize(model: DetailModel, view: DetailView) {
         self.model = model
         self.view = view
-    }
-}
-
-// MARK: - Configurators
-
-extension DetailViewController {
-    private func configureView() {
-        view.backgroundColor = .systemBackground
     }
 }
 
